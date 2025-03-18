@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.page {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.active-card {
+    background-color: green;
+    color: white;
+}
