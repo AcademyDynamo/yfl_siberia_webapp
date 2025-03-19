@@ -1,30 +1,28 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ЮФЛ Сибирь Fantasy League</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fantasy League</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>ЮФЛ Сибирь Fantasy League</h1>
-        <div class="field">
-            <div class="player" id="player1" onclick="selectPlayer('player1')">Игрок 1</div>
-            <div class="player" id="player2" onclick="selectPlayer('player2')">Игрок 2</div>
-            <div class="player" id="player3" onclick="selectPlayer('player3')">Игрок 3</div>
-            <div class="player" id="player4" onclick="selectPlayer('player4')">Игрок 4</div>
-            <div class="player" id="player5" onclick="selectPlayer('player5')">Игрок 5</div>
-            <div class="player" id="player6" onclick="selectPlayer('player6')">Игрок 6</div>
-            <div class="player" id="player7" onclick="selectPlayer('player7')">Игрок 7</div>
-        </div>
-        <div class="buttons">
-            <button onclick="saveGame()">Сохранить игру</button>
-            <button onclick="endGame()">Завершить игру</button>
-        </div>
-    </div>
 
-    <script src="script.js"></script>
-</body>
-</html>
+  <header>
+    <h1>Fantasy Football League</h1>
+  </header>
+
+  <main>
+    <!-- Приветственное сообщение или информация -->
+    <section class="intro fade-in">
+      <p>Добро пожаловать в фэнтези-лигу! Создайте свою команду, следите за результатами и побеждайте!</p>
+      <button class="start-btn">Начать игру</button>
+    </section>
+
+    <!-- Карточки игроков -->
+    <section class="players">
+      <h2>Выберите игроков для своей команды</h2>
+      <div class="player-card slide-in-left">
+        <img src="player1.jpg" alt="Игрок 1">
+        <h3>Игрок 1</h3>
+        <p>Позиция: Нападающий</p>
