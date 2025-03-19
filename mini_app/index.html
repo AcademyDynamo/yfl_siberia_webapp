@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy League</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Fantasy Football League</h1>
+        </header>
+
+        <section id="team-selection">
+            <h2>Your Team</h2>
+            <div class="team">
+                <!-- Иконки игроков -->
+                <div class="player-slot" id="player1" onclick="selectPlayer(1)">
+                    <img src="icon1.png" alt="Player 1">
+                    <span>Player 1</span>
+                </div>
+                <div class="player-slot" id="player2" onclick="selectPlayer(2)">
+                    <img src="icon2.png" alt="Player 2">
+                    <span>Player 2</span>
+                </div>
+                <!-- Добавить еще иконки -->
+            </div>
+        </section>
+
+        <section id="available-players" class="hidden">
+            <h2>Select Available Players</h2>
+            <div id="available-list">
+                <!-- Список доступных игроков -->
+            </div>
+        </section>
+
+        <section id="leaderboard">
+            <h2>Leaderboard</h2>
+            <div id="leaderboard-content">
+                <!-- Таблица лидерборда -->
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
