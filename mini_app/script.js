@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded", () => {
+п»їdocument.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".jersey").forEach(button => {
         button.addEventListener("click", () => {
-            alert(`Вы выбрали позицию: ${button.dataset.position}`);
+            alert(`Р’С‹ РІС‹Р±СЂР°Р»Рё РїРѕР·РёС†РёСЋ: ${button.dataset.position}`);
         });
     });
 });
