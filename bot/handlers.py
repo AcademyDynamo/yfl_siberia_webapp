@@ -1,4 +1,4 @@
-from aiogram import Router, types
+п»їfrom aiogram import Router, types
 from aiogram.filters import Command
 from database import add_user
 
@@ -8,7 +8,7 @@ router = Router()
 async def start_handler(message: types.Message):
     user_id = message.from_user.id
     username = message.from_user.username or "unknown"
-    team_name = f"Команда {username}"
+    team_name = f"РљРѕРјР°РЅРґР° {username}"
     
     add_user(user_id, username, team_name)
-    await message.answer(f"Привет, {username}! Добро пожаловать в Fantasy League!")
+    await message.answer(f"РџСЂРёРІРµС‚, {username}! Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РІ Fantasy League!")

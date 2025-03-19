@@ -1,4 +1,4 @@
-import asyncio
+п»їimport asyncio
 import logging
 from aiogram import Bot, Dispatcher
 from config import BOT_TOKEN
@@ -13,7 +13,7 @@ async def main():
     dp.include_router(router)
     init_db()
 
-    print("Бот запущен!")
+    print("Р‘РѕС‚ Р·Р°РїСѓС‰РµРЅ!")
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
